@@ -1,0 +1,16 @@
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th><a [routerLink]="['/clients/create']">Create</a></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let client of clients$ | async">
+      <td>{{ client.id }}</td>
+      <td>{{ client.name }}</td>
+      <td><a [routerLink]="['/clients', client.id]">View</a></td>
+    </tr>
+  </tbody>
+</table>

@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+
 import { Observable, of, throwError } from 'rxjs';
 
 import { IClient } from '../models/client';
@@ -16,7 +17,7 @@ export class ClientsService {
     this.ensureClientsExist();
   }
 
-  addClient(name: string, description?: string): Observable<void> {
+  createClient(name: string, description?: string): Observable<void> {
     const clients = this.loadClients();
     const newClient: IClient = { id: clients.length + 1, name: name, description: description, relatedClients: [] };
     clients.push(newClient);
