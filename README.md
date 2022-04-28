@@ -1,27 +1,41 @@
-# Portal
+# Client Admin Portal
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.2.
+## Introduction
 
-## Development server
+The client admin portal is a work-in-progress application for managing a business's clients. 
+
+Each client has an id, a name and a description, as well as a list of other related clients.
+
+In its current state the application allows you to:
+- view table containing the name of every client.
+- view the full details of a single client.
+- create a new client.
+
+### Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Tasks
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+There are a number of small features and bugs that require your attention:
 
-## Build
+### Feature: Improve clients table styles
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Acceptance criteria:
+- The background-colour of all even numbered rows in the table body should be a light gray (e.g. `#eeeeee`).
 
-## Running unit tests
+### Feature: Implement client creation 
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Acceptance criteria:
+- The submit button should be disabled until a name has been entered (the description is optional).
+- After clicking submit, a new client should be created using the `createClient` method of the `ClientsService`. 
 
-## Running end-to-end tests
+### Bug: Fix related clients navigation
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Reproduction steps:
+- Navigate to a client from the list on the home page using the view link.
+- Click any related client.
+- The url updates but the previous client details are still showing.
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Acceptance criteria:
+- Clicking a related client should load and display the details of that client.
