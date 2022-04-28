@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The client admin portal is a work-in-progress application for managing a business's clients. 
+The client admin portal is a work-in-progress application designed to allow a business to manage its clients. 
 
 Each client has an id, a name and a description, as well as a list of other related clients.
 
@@ -23,6 +23,15 @@ There are a number of small features and bugs that require your attention:
 
 Acceptance criteria:
 - The background-colour of all even numbered rows in the table body should be a light gray (e.g. `#eeeeee`).
+
+### Bug: Fix font-size toggle
+
+Reproduction steps:
+- Increase or decrease the font-size using the +/- buttons in the top right corner of the page.
+- Neither the numeric value displayed between the +/- buttons nor the font-size of any element on the page changes.
+
+Acceptance criteria:
+- Toggling the font-size should update both the displayed value in the top right corner and the font-size of elements on the page.
 
 ### Feature: Implement client creation 
 
