@@ -7,9 +7,17 @@ The client admin portal is a work-in-progress application designed to allow a bu
 Each client has an id, a name and a description, as well as a list of other related clients.
 
 In its current state the application allows you to:
-- view table containing the name of every client.
+- view a table containing the name of every client.
 - view the full details of a single client.
 - create a new client.
+
+### Installation
+
+Clone or download the project.
+
+![image](https://user-images.githubusercontent.com/104509589/165735644-1b4879eb-d476-4a14-83df-158447389360.png)
+
+Run `npm install` from anywhere within the project directory. 
 
 ### Development server
 
@@ -28,7 +36,7 @@ Acceptance criteria:
 
 Reproduction steps:
 - Increase or decrease the font-size using the +/- buttons in the top right corner of the page.
-- Neither the numeric value displayed between the +/- buttons nor the font-size of any element on the page changes.
+- Neither the numeric value displayed between the +/- buttons nor the font-size of any element on the page is updated.
 
 Acceptance criteria:
 - Toggling the font-size should update both the displayed value in the top right corner and the font-size of elements on the page.
