@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ClientsComponent } from './components/clients/clients.component';
 import { CreateClientComponent } from './components/create-client/create-client.component';
+import { OptionsComponent } from './components/options/options.component';
 import { ViewClientComponent } from './components/view-client/view-client.component';
 
 @NgModule({
@@ -19,6 +20,7 @@ import { ViewClientComponent } from './components/view-client/view-client.compon
     AppComponent,
     ClientsComponent,
     CreateClientComponent,
+    OptionsComponent,
     ViewClientComponent
   ],
   bootstrap: [AppComponent]

@@ -4,7 +4,8 @@
     <a routerLink="/">Home</a>
     <a routerLink="/clients/create">Create Client</a>
   </nav>
+  <app-options [fontSize]="fontSize"></app-options>
 </header>
-<main>
+<main [ngStyle]="{ 'font-size': fontSizePixels }">
   <router-outlet></router-outlet>
 </main>
