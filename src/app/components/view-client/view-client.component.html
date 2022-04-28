@@ -1,11 +1,9 @@
 <ng-container *ngIf="client$ | async as client">
+  <h2>{{ client.id }} - {{ client.name }}</h2>
+  <h3>Description</h3>
+  <p>{{ client.description }}</p>
+  <h3>Related Clients</h3>
   <ul>
-    <li><strong>ID: </strong>{{ client.id }}</li>
-    <li><strong>Name: </strong>{{ client.name }}</li>
-    <li><strong>Description: </strong>{{ client.description }}</li>
-  </ul>
-  <ul>
-    Related Clients
     <li *ngFor="let relatedClient of client.relatedClients">
       <a [routerLink]="['/clients', relatedClient.id]">{{ relatedClient.name }}</a>
     </li>
