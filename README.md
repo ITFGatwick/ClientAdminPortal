@@ -39,13 +39,13 @@ Reproduction steps:
 - Neither the numeric value displayed between the +/- buttons nor the font-size of any element on the page is updated.
 
 Acceptance criteria:
-- Toggling the font-size should update both the displayed value in the top right corner and the font-size of elements on the page.
+- Toggling the font-size should update both the displayed value in the top right corner and the font-size of non-header elements on the page.
 
 ### Feature: Implement client creation 
 
 Acceptance criteria:
-- The submit button should be disabled until a name has been entered (the description is optional).
-- After clicking submit, a new client should be created using the `createClient` method of the `ClientsService`. 
+- The create button should be disabled until a name has been entered (the description is optional).
+- After clicking create, a new client should be created using the `createClient` method of the `ClientsService` (resetting the form to its original state and/or redirecting the user to the newly created client are outside the scope of this excerise).
 
 ### Bug: Fix related clients navigation
 
