@@ -45,7 +45,7 @@ Acceptance criteria:
 
 Acceptance criteria:
 - The create button should be disabled until a name has been entered (the description is optional).
-- After clicking create, a new client should be created using the `createClient` method of the `ClientsService` (resetting the form to its original state and/or redirecting the user to the newly created client are outside the scope of this excerise).
+- After clicking create, a new client should be created using the `createClient` method of the `ClientsService` (resetting the form to its original state and/or redirecting the user to the newly created client are outside the scope of this exercise).
 
 ### Bug: Fix related clients navigation
 
