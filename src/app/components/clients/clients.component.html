@@ -7,10 +7,12 @@
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let client of clients$ | async">
-      <td>{{ client.id }}</td>
-      <td>{{ client.name }}</td>
-      <td><a [routerLink]="['/clients', client.id]">View</a></td>
-    </tr>
+    @for (client of clients$ | async; track client) {
+      <tr>
+        <td>{{ client.id }}</td>
+        <td>{{ client.name }}</td>
+        <td><a [routerLink]="['/clients', client.id]">View</a></td>
+      </tr>
+    }
   </tbody>
 </table>
