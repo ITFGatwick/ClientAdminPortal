@@ -6,9 +6,10 @@ import { IClient } from '../../models/client';
 import { ClientsService } from '../../services/clients.service';
 
 @Component({
-  selector: 'app-view-client',
-  templateUrl: './view-client.component.html',
-  styleUrls: ['./view-client.component.css']
+    selector: 'app-view-client',
+    templateUrl: './view-client.component.html',
+    styleUrls: ['./view-client.component.css'],
+    standalone: false
 })
 export class ViewClientComponent implements OnInit {
 
